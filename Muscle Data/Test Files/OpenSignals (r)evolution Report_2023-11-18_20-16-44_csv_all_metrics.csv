@@ -1,0 +1,5 @@
+{"version":"Public Build 2023-10-23","author":"PLUX","datetime":"Fri Nov 03 2023 17:55:52 GMT+1","file":"/Users/ajbennetts/Dropbox/Muscle Data/Vastus Lateralis Left/EMG_Amanda_Bennetts__BIOSIGNALSPLUS_2023-11-18_20-12-32.h5","duration":"22s","0C:43:14:24:73:5D":{"device_name":"BIOSIGNALSPLUS","device_type":"bitalino_rev","samplingFreq":1000,"resolution":10,"activeChannels":[1,0,0,0,0,0],"labelChannels":["EMG","A2","A3","A4","A5","A6"],"sensorChannels":["EMGBITREV","RAW","RAW","RAW","RAW","RAW"],"supports24BitResolution":false}}
+
+Nr, Device, Channel, Start time, End time, Maximum, Mean, Median, Minimum, Peak to Peak, Root mean square, Root sum square, Standard deviation 
+0, 0C:43:14:24:73:5D, 1, 0, 17.69, 0.43, 0.00, 0.00, -0.43, 0.86, 0.06, 7.86, 0.06
+1, 0C:43:14:24:73:5D, 1, 0, 17.69, 0.43, 0.00, 0.00, -0.43, 0.86, 0.06, 7.86, 0.06

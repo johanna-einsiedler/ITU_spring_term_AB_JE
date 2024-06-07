@@ -1,0 +1,7 @@
+{"version":"Public Build 2023-10-23","author":"PLUX","datetime":"Fri Nov 03 2023 17:55:52 GMT+1","file":"/Users/ajbennetts/Dropbox/Muscle Data/Vastus Lateralis Left/EMG_Amanda_Bennetts__BIOSIGNALSPLUS_2023-11-18_20-12-32.h5","duration":"22s","0C:43:14:24:73:5D":{"device_name":"BIOSIGNALSPLUS","device_type":"bitalino_rev","samplingFreq":1000,"resolution":10,"activeChannels":[1,0,0,0,0,0],"labelChannels":["EMG","A2","A3","A4","A5","A6"],"sensorChannels":["EMGBITREV","RAW","RAW","RAW","RAW","RAW"],"supports24BitResolution":false}}
+
+,device,digital,digStart,digEnd,digDuration,channel,activation,start,end,duration,latency,max,mean,min,ampup,ampdown,ampupordown,ampupdown,std,rms,area,xchannel,cx_max,cx_mean,cx_min,cx_ampup,cx_ampdown,cx_ampupordown,cx_ampupdown,cx_std,cx_rms,cx_area
+Act x,_,_,_,_,_,_,_,_,_,_,_,_,,_,_,_,,_,,_,_,_,_,,_,_,_,,_,,_,_
+Act y,_,_,_,_,_,_,_,_,_,_,_,_,,_,_,_,,_,,_,_,_,_,,_,_,_,,_,,_,_
+Diff,_,_,_,_,_,_,_,_,_,_,_,_,,_,_,_,,_,,_,_,_,_,,_,_,_,,_,,_,_
+Ratio,_,_,_,_,_,_,_,_,_,_,_,_,,_,_,_,,_,,_,_,_,_,,_,_,_,,_,,_,_
