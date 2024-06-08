@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Do algorithms care?</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="preload" as="style" href="./_observablehq/theme-deep-space.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
+<link rel="stylesheet" type="text/css" href="./_observablehq/theme-deep-space.css">
+<link rel="modulepreload" href="./_observablehq/client.js">
+<link rel="modulepreload" href="./_observablehq/runtime.js">
+<link rel="modulepreload" href="./_observablehq/stdlib.js">
+<script type="module">
+
+import "./_observablehq/client.js";
+
+</script>
+<input id="observablehq-sidebar-toggle" type="checkbox" title="Toggle sidebar">
+<label id="observablehq-sidebar-backdrop" for="observablehq-sidebar-toggle"></label>
+<nav id="observablehq-sidebar">
+  <ol>
+    <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
+    <li class="observablehq-link observablehq-link-active"><a href="./">Do algorithms care?</a></li>
+  </ol>
+  <section>
+    <summary>AI:Rx</summary>
+    <ol>
+    <li class="observablehq-link"><a href="./example-dashboard">Data Viz</a></li>
+    <li class="observablehq-link"><a href="./example-report">Quantifying Yourself</a></li>
+    <li class="observablehq-link"><a href="./research">Research</a></li>
+    </ol>
+  </section>
+</nav>
+<script>{Object.assign(document.createElement("a"),{href:""}).password&&location.replace(location.href);const e=document.querySelector("#observablehq-sidebar"),t=document.querySelector("#observablehq-sidebar-toggle"),r=sessionStorage.getItem("observablehq-sidebar");r?t.checked=r==="true":t.indeterminate=!0;for(const o of document.querySelectorAll("#observablehq-sidebar summary")){const s=o.parentElement;switch(sessionStorage.getItem(`observablehq-sidebar:${o.textContent}`)){case"true":s.open=!0;break;case"false":s.classList.contains("observablehq-section-active")||(s.open=!1);break}}addEventListener("beforeunload",()=>sessionStorage.setItem("observablehq-sidebar-scrolly",`${e.scrollTop}`));const a=sessionStorage.getItem("observablehq-sidebar-scrolly");a!=null&&(e.style.cssText="overflow: hidden;",e.scrollTop=+a,e.style.cssText="");}</script>
+<div id="observablehq-center">
+<main id="observablehq-main" class="observablehq">
+<style>
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin: 0rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 4rem 0;
+  padding-bottom: 2rem;
+  max-width: none;
+  text-align: center;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 200px;
+  color: #fff;
+  text-align: center;
+
+}
+
+
+.hero h2 {
+  margin: 0;
+  max-width: 34em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-foreground-muted);
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+.button {
+  position: relative;
+  z-index: 1;
+  background: var(--purple-900);
+  border: 3px solid;
+  border-color: var(--purple-400);
+  border-radius: 0.75rem;
+  color: var(--purple-300);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  transition: 250ms ease-in-out;
+  transition-property: all;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--purple-200);
+  background-color: var(--purple-800);
+  transform: scale(1.1);
+}
+
+.text {
+  filter: drop-shadow(0 0 1px currentcolor);
+}
+
+.button:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: 0.6;
+  border-radius: inherit;
+  box-shadow: 0 0 1em 0.5em var(--purple-300);
+  transition: 250ms ease-in-out;
+  transition-property: opacity;
+}
+
+.button:hover::after,
+.button:focus::after {
+  opacity: 0.6;
+}
+</style>
+<div class=" hero">
+  <h1>N=1</h1>
+  <div class="center">
+  <a href="./example-dashboard" class="button" target="_blank">
+    <span class="text">Do Algorithms Care?</span>
+    </a>
+    </div>
+ <!-- <h2>Welcome to your new project! Edit&nbsp;<code style="font-size: 90%;">docs/index.md</code> to change this page.</h2>
+  <a href="https://observablehq.com/framework/getting-started" target="_blank">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
+</div>
+--></div></main>
+<footer id="observablehq-footer">
+<nav><a rel="next" href="./example-dashboard"><span>Data Viz</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-08T19:17:31">Jun 8, 2024</a>.</div>
+</footer>
+</div>

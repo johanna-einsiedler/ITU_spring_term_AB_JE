@@ -1,7 +1,18 @@
-import numpy
 from scipy.fftpack import fft
 import sys
 
+import scipy.misc
+import os
+import numpy as np
+import glob
+import scipy
+#from pyAudioAnalysis import audioFeatureExtraction as aF
+import matplotlib.patches
+from PIL import Image
+import cv2
+import matplotlib.cm
+import scipy.signal as filter
+import pyAudioAnalysis.audioFeatureExtraction as audioFeatureExtraction
 eps = 0.00000001
 
 
@@ -277,4 +288,14 @@ def stSpectralRollOff(X, c, fs):
     return (mC)
 
 
+
+def createSpectrogramFile(x, Fs, fileName, stWin, stStep,label):
+    specgramOr, TimeAxis, FreqAxis = aF.stSpectogram(x, Fs, round(Fs * stWin), round(Fs * stStep), False)
+    specgramOr = filter.medfilt2d(specgramOr,5)
+    save_path = "medfilt5_label_"+label+'/'
+    if not os.path.exists(save_path):
+        os.mkdir(save_path)
+    specgram = cv2.resize(specgramOr, (227, 227), interpolation=cv2.INTER_LINEAR)
+    im1 = Image.fromarray(np.uint8(matplotlib.cm.jet(specgram) * 255))
+    scipy.misc.imsave(save_path+fileName, im1)
 
