@@ -96,16 +96,14 @@ launches.filter((d) => d.stateId !== "US" && d.stateId !== "SU" && d.stateId !==
 ))
 }});
 
-define({id: "8c7059ee", inputs: ["display","surveyData","Plot","correlations"], body: (display,surveyData,Plot,correlations) => {
-display(surveyData)
-
+define({id: "e93d9c8b", inputs: ["display","Plot","correlations"], body: (display,Plot,correlations) => {
 display(Plot.plot({
   x: {tickRotate: -90},
   marginBottom: 200,
   marginLeft: 200,
   width: 800,
   label: null,
-  color: { scheme: "rdylbu", pivot: 0, legend: true, label: "cor" },
+  color: { scheme: "PRGn", pivot: 0, legend: true, label: "cor" },
   marks: [
     Plot.cell(correlations, { x: "v1", y: "v2", fill: "cor" }),
     Plot.text(correlations, {
@@ -118,23 +116,23 @@ display(Plot.plot({
 }))
 
 
-display(Plot.plot({
-  x: {
-    //ticks: simpsons.filter((d) => d.number_in_season === 1).map((d) => d.id),
-    //tickFormat: (x) => simpsons.find((d) => d.id === x).season,
-    label: "Days",
-    labelAnchor: "right",
-    labelArrow: true,
-    tickRotate:-90
-  },
-  color: {
-    type: "linear",
-    scheme: "PiYG"
-  },
-  marks: [
-    Plot.cell(surveyData, {x: "date",fill: "fatigue"})
-  ]
-}))
+// display(Plot.plot({
+//   x: {
+//     //ticks: simpsons.filter((d) => d.number_in_season === 1).map((d) => d.id),
+//     //tickFormat: (x) => simpsons.find((d) => d.id === x).season,
+//     label: "Days",
+//     labelAnchor: "right",
+//     labelArrow: true,
+//     tickRotate:-90
+//   },
+//   color: {
+//     type: "linear",
+//     scheme: "PiYG"
+//   },
+//   marks: [
+//     Plot.cell(surveyData, {x: "date",fill: "fatigue"})
+//   ]
+// }))
 }});
 
 </script>
@@ -189,10 +187,10 @@ display(Plot.plot({
 </div>
 -->
 <!-- Plot of launch history -->
-<div id="cell-8c7059ee" class="observablehq observablehq--block"></div>
+<div id="cell-e93d9c8b" class="observablehq observablehq--block"><span class="observablehq-loading"></span></div>
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./"><span>Do algorithms care?</span></a><a rel="next" href="./example-report"><span>Quantifying Yourself</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-08T19:17:31">Jun 8, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-10T18:04:32">Jun 10, 2024</a>.</div>
 </footer>
 </div>

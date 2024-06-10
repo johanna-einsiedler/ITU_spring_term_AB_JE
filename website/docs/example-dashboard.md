@@ -56,15 +56,13 @@ const surveyData = FileAttachment("data/study_data.csv").csv({typed: true}).then
 <!-- Plot of launch history -->
 
 ```js
-display(surveyData)
-
 display(Plot.plot({
   x: {tickRotate: -90},
   marginBottom: 200,
   marginLeft: 200,
   width: 800,
   label: null,
-  color: { scheme: "rdylbu", pivot: 0, legend: true, label: "cor" },
+  color: { scheme: "PRGn", pivot: 0, legend: true, label: "cor" },
   marks: [
     Plot.cell(correlations, { x: "v1", y: "v2", fill: "cor" }),
     Plot.text(correlations, {
@@ -77,21 +75,21 @@ display(Plot.plot({
 }))
 
 
-display(Plot.plot({
-  x: {
-    //ticks: simpsons.filter((d) => d.number_in_season === 1).map((d) => d.id),
-    //tickFormat: (x) => simpsons.find((d) => d.id === x).season,
-    label: "Days",
-    labelAnchor: "right",
-    labelArrow: true,
-    tickRotate:-90
-  },
-  color: {
-    type: "linear",
-    scheme: "PiYG"
-  },
-  marks: [
-    Plot.cell(surveyData, {x: "date",fill: "fatigue"})
-  ]
-}))
+// display(Plot.plot({
+//   x: {
+//     //ticks: simpsons.filter((d) => d.number_in_season === 1).map((d) => d.id),
+//     //tickFormat: (x) => simpsons.find((d) => d.id === x).season,
+//     label: "Days",
+//     labelAnchor: "right",
+//     labelArrow: true,
+//     tickRotate:-90
+//   },
+//   color: {
+//     type: "linear",
+//     scheme: "PiYG"
+//   },
+//   marks: [
+//     Plot.cell(surveyData, {x: "date",fill: "fatigue"})
+//   ]
+// }))
 ```
