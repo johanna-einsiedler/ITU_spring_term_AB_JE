@@ -64,31 +64,63 @@ import "./_observablehq/client.js";
 </ul>
 <h3 id="muscle-data-measurement" tabindex="-1"><a class="observablehq-header-anchor" href="#muscle-data-measurement">Muscle Data Measurement</a></h3>
 <p>Timing? -&gt; in the morning?! (most consistent?)</p>
-<h3 id="emg-measurement-protocol" tabindex="-1"><a class="observablehq-header-anchor" href="#emg-measurement-protocol">EMG Measurement Protocol</a></h3>
+<h3 id="emg-%2B-mmg-measurement-protocol" tabindex="-1"><a class="observablehq-header-anchor" href="#emg-%2B-mmg-measurement-protocol">EMG + MMG Measurement Protocol</a></h3>
 <ol>
 <li>Clean skin where the electrodes will be positioned</li>
-<li>Position measurement electrodes (E1 &amp; E2) as in <a href="./10.3390/healthcare10122544">Sengchuai et al (2022)</a> - around 8cm above the knee, area of greatest muscle bulk (see also <a href="https://www.mskscienceandpractice.com/article/S1356-689X(15)00143-5/pdf" target="_blank" rel="noopener noreferrer">Hodges et al 2015</a>, similarly <a href="./10.1155/2016/6957287">Miura et al 2016</a>)
-<img src="./_file/image-7.8712ea7d.png" alt="drawing" width="400"></li>
-<li>Position reference electrode (E0) on the knee</li>
+<li>Position measurement electrodes as in <a href="https://doi.org/10.1002/mus.25502" target="_blank" rel="noopener noreferrer">Smith et al 2017</a> - see drawing
+<img src="./_file/vastus-lateralis-muscle.4d3337d3.png" alt="drawing" width="200"></li>
 <li>Start protocol time tracker</li>
 <li>Sit down on the floor, against a wall, legs straight</li>
 <li>Keep muscles relaxed, start measurement (10s)</li>
-<li>Try to maximally contract your upper limb muscles as much as possible for 3 x  6s (see also <a href="https://www.sciencedirect.com/science/article/pii/S0165027009002015" target="_blank" rel="noopener noreferrer">Hendrix et al (2009)</a>)</li>
+<li>Try to maximally contract your upper leg muscles as much as possible for 3 x  6s (see also <a href="https://www.sciencedirect.com/science/article/pii/S0165027009002015" target="_blank" rel="noopener noreferrer">Hendrix et al (2009)</a>)</li>
 <li>Stand up and take wall sit position, 90 degree angle (30s) (this is a form of isometric muscle contraction and according to <a href="https://doi.org/10.1145/3648679" target="_blank" rel="noopener noreferrer">Li et al. 2024</a>, this is the type of exercise most often used in fatigure detection based on EMG; also wall sit is an <a href="https://www.yourhousefitness.com/blog/exercise-tutorial-wall-sit#google_vignette" target="_blank" rel="noopener noreferrer">exercise that engages the vastus lateralis</a>; similarly <a href="https://www.aaem.pl/pdf-81716-26429?filename=Differences%20in.pdf" target="_blank" rel="noopener noreferrer">Gawda et al 2018</a> ask runners to perform 60s squats to measure fatigue)</li>
 <li>Sit down again, back agains the wall, legs straight (10s)</li>
 </ol>
+<h3 id="survey" tabindex="-1"><a class="observablehq-header-anchor" href="#survey">Survey</a></h3>
+<h4 id="questions-from-first-trial" tabindex="-1"><a class="observablehq-header-anchor" href="#questions-from-first-trial">Questions from first trial</a></h4>
+<ul>
+<li>How fatigued were you today? 1 (no fatigue at all) to 7 (extremely fatigued)</li>
+<li>Symptoms experienced today
+<ul>
+<li>Muscle weakness</li>
+<li>Trouble climbing stairs</li>
+<li>Trouble standing from a seated position</li>
+<li>Active Rash</li>
+<li>Brain Fog</li>
+<li>Extreme Fatigue</li>
+</ul>
+</li>
+<li>How difficult was it to dress and shower today?&nbsp;1 (no difficulty) to 5 (unable to do).</li>
+<li>How difficult was it to climb stairs today?&nbsp;1 (no difficulty) to 5 (unable to do).</li>
+<li><span style="color:red">How difficult was it to complete common daily activities? &nbsp;1 (no difficulty) to 5 (unable to do). [Kick Out - high correlation with pain] </span></li>
+<li>How much pain were you in today? 1&nbsp;(pain at all) to 5 (worst pain experienced).</li>
+<li>Do you have an active and visible rash? 1 (no rash at all) to 5 (very visible rash in DM areas)</li>
+<li>Overall how did you feel today? As an overall "wellness" 1 (horrible, hard to function) to 5 (very well).[Kick Out - high correlation with pain]</li>
+<li>How do you think you will feel tomorrow? As an overall "wellness" 1 (horrible, hard to function) to 5 (very well).</li>
+</ul>
 <h3 id="references" tabindex="-1"><a class="observablehq-header-anchor" href="#references">References</a></h3>
 <ul>
-<li>Hendrix C. Russell , Housh Terry J. , Johnson Glen O. ,  Mielke Michelle, Camic Clayton L. , Zuniga Jorge M. , Schmidt  Richard J., A new EMG frequency-based fatigue threshold test, Journal of Neuroscience Methods, Volume 181, Issue 1, 2009, Pages 45-51, ISSN 0165-0270, <a href="https://www.sciencedirect.com/science/article/pii/S0165027009002015" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.jneumeth.2009.04.011.</a></li>
-<li>Gawda P, Ginszt M, Ginszt A, Pawlak H, Majcher P. Differences in myoelectric manifestations of fatigue during isometric muscle actions. Ann Agric Environ Med. 2018 Jun 20;25(2):296-299. doi: <a href="./10.26444/aaem/81716">10.26444/aaem/81716.</a> Epub 2018 Feb 21. PMID: 29936808.</li>
-<li>Hodges PW, van den Hoorn W, Wrigley TV, Hinman RS, Bowles KA, Cicuttini F, Wang Y, Bennell K. Increased duration of co-contraction of medial knee muscles is associated with greater progression of knee osteoarthritis. Man Ther. 2016 Feb;21:151-8. doi: <a href="./10.1016/j.math.2015.07.004.">10.1016/j.math.2015.07.004.</a> Epub 2015 Jul 17. PMID: 26254263.</li>
-<li>Na Li, Rui Zhou, Bharath Krishna, Ashirbad Pradhan, Hyowon Lee, Jiayuan He, and Ning Jiang. 2024. Non-invasive Techniques for Muscle Fatigue Monitoring: A Comprehensive Survey. ACM Comput. Surv. 56, 9, Article 221 (September 2024), 40 pages. <a href="https://doi.org/10.1145/3648679" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3648679</a></li>
-<li>Miura N, Watanabe T. Potential of M-Wave Elicited by Double Pulse for Muscle Fatigue Evaluation in Intermittent Muscle Activation by Functional Electrical Stimulation for Motor Rehabilitation. J Med Eng. 2016;2016:6957287. doi: 10.1155/2016/6957287. Epub 2016 Mar 27. PMID: 27110556; PMCID: PMC4826699.</li>
-<li>Sengchuai K, Kanjanaroat C, Jaruenpunyasak J, Limsakul C, Tayati W, Booranawong A, Jindapetch N. Development of a Real-Time Knee Extension Monitoring and Rehabilitation System: Range of Motion and Surface EMG Measurement and Evaluation. Healthcare (Basel). 2022 Dec 15;10(12):2544. doi: <a href="./10.3390/healthcare10122544">10.3390/healthcare10122544</a>. PMID: 36554067; PMCID: PMC9778223.</li>
+<li>
+<p>Hendrix C. Russell , Housh Terry J. , Johnson Glen O. ,  Mielke Michelle, Camic Clayton L. , Zuniga Jorge M. , Schmidt  Richard J., A new EMG frequency-based fatigue threshold test, Journal of Neuroscience Methods, Volume 181, Issue 1, 2009, Pages 45-51, ISSN 0165-0270, <a href="https://www.sciencedirect.com/science/article/pii/S0165027009002015" target="_blank" rel="noopener noreferrer">https://doi.org/10.1016/j.jneumeth.2009.04.011.</a></p>
+</li>
+<li>
+<p>Gawda P, Ginszt M, Ginszt A, Pawlak H, Majcher P. Differences in myoelectric manifestations of fatigue during isometric muscle actions. Ann Agric Environ Med. 2018 Jun 20;25(2):296-299. doi: <a href="./10.26444/aaem/81716">10.26444/aaem/81716.</a> Epub 2018 Feb 21. PMID: 29936808.</p>
+</li>
+<li>
+<p>Na Li, Rui Zhou, Bharath Krishna, Ashirbad Pradhan, Hyowon Lee, Jiayuan He, and Ning Jiang. 2024. Non-invasive Techniques for Muscle Fatigue Monitoring: A Comprehensive Survey. ACM Comput. Surv. 56, 9, Article 221 (September 2024), 40 pages. <a href="https://doi.org/10.1145/3648679" target="_blank" rel="noopener noreferrer">https://doi.org/10.1145/3648679</a></p>
+</li>
+<li>
+<p>Smith, C.M., Housh, T.J., Hill, E.C., Johnson, G.O. and Schmidt, R.J. (2017), Changes in electromechanical delay during fatiguing dynamic muscle actions. Muscle Nerve, 56: 315-320. <a href="https://doi.org/10.1002/mus.25502" target="_blank" rel="noopener noreferrer">https://doi.org/10.1002/mus.25502</a></p>
+</li>
 </ul>
+<!---
+- Miura N, Watanabe T. Potential of M-Wave Elicited by Double Pulse for Muscle Fatigue Evaluation in Intermittent Muscle Activation by Functional Electrical Stimulation for Motor Rehabilitation. J Med Eng. 2016;2016:6957287. doi: 10.1155/2016/6957287. Epub 2016 Mar 27. PMID: 27110556; PMCID: PMC4826699.
+- Sengchuai K, Kanjanaroat C, Jaruenpunyasak J, Limsakul C, Tayati W, Booranawong A, Jindapetch N. Development of a Real-Time Knee Extension Monitoring and Rehabilitation System: Range of Motion and Surface EMG Measurement and Evaluation. Healthcare (Basel). 2022 Dec 15;10(12):2544. doi: [10.3390/healthcare10122544](10.3390/healthcare10122544). PMID: 36554067; PMCID: PMC9778223.
+
+- Hodges PW, van den Hoorn W, Wrigley TV, Hinman RS, Bowles KA, Cicuttini F, Wang Y, Bennell K. Increased duration of co-contraction of medial knee muscles is associated with greater progression of knee osteoarthritis. Man Ther. 2016 Feb;21:151-8. doi: [10.1016/j.math.2015.07.004.](10.1016/j.math.2015.07.004.) Epub 2015 Jul 17. PMID: 26254263.--->
 </main>
 <footer id="observablehq-footer">
 <nav><a rel="prev" href="./example-dashboard"><span>Data Viz</span></a><a rel="next" href="./research"><span>Research</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-11T13:00:22">Jun 11, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-11T23:17:39">Jun 11, 2024</a>.</div>
 </footer>
 </div>
