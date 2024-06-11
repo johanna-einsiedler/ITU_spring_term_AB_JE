@@ -17,10 +17,11 @@ Last edited: June 8th, 2024
 What can we find out about fatigue prediction based on EMG measurements?
 
 
-# Review Articles
+
+
 
 ## [Li, 2024](https://dl.acm.org/doi/pdf/10.1145/3648679)
-
+>Na Li, Rui Zhou, Bharath Krishna, Ashirbad Pradhan, Hyowon Lee, Jiayuan He, and Ning Jiang. 2024. Non-invasive Techniques for Muscle Fatigue Monitoring: A Comprehensive Survey. ACM Comput. Surv. 56, 9, Article 221 (September 2024), 40 pages. https://doi.org/10.1145/3648679<
 
 ### Fatigue Measurement
 
@@ -64,12 +65,15 @@ Other methods:
 - Short-time Fourier Transform (STFT): time-localized frequency information for situations in which frequency components of a signal vary over time
 - Continuous Wavelet Transform (CWT) 
 - extracting entropy from sEMG is an effective method for analyzing muscle fatigue
-
+#### MMG
+- RMS -the greater the muscle activation, the higher the MMG amplitude
+- MPF
+- MDF
+- frequency radio change (FRC)
 ### Results
 #### EMG
 - Wellems et al. [93] found that during the 20% MVC isometric contraction of the quadriceps femoris to failure, the MDF and MPF first increased, then decreased, and finally fell below the initial state
-- Mehra et al. [94] found that the shape of
-the EMG spectral distribution of deltoid muscle did not change when performing isometric lateral raise at 60% MVC till the endurance limit but shifted towards lower frequency with an increase of magnitude at characteristic mode frequency
+- Mehra et al. [94] found that the shape of the EMG spectral distribution of deltoid muscle did not change when performing isometric lateral raise at 60% MVC till the endurance limit but shifted towards lower frequency with an increase of magnitude at characteristic mode frequency
 
 
 ### Protocols
@@ -77,7 +81,7 @@ the EMG spectral distribution of deltoid muscle did not change when performing i
 
 most research based on isometric contractions potentially (contractions in which there is no change in the length of the muscle. No joint or limb motion occurs) since EMG signals during isometric contraction can be assumed to be stationary between short-time intervals of 0.5 s–2 s
 
-## Yousif, 2019
+## [Yousif, 2019](https://iopscience.iop.org/article/10.1088/1757-899X/705/1/012010)
 *Yousif, Hayder & Zakaria, Ammar & Abdul Rahim, Norasmadi & Salleh, Ahmad & Sabry, Mustafa & Alfarhan, Khudhur & Kamarudin, Latifah & Syed Zakaria, Syed Muhammad Mamduh & Hasan, Ali & K Hussain, Moaid. (2019). Assessment of Muscles Fatigue Based on Surface EMG Signals Using Machine Learning and Statistical Approaches: A Review. IOP Conference Series Materials Science and Engineering. 705. 012010. 10.1088/1757-899X/705/1/012010.*
 
 ### Task
@@ -123,7 +127,7 @@ Filtration -> Rectification -> Smoothing
 - time-varying autoregressive approach (TVAR)
 
 
-## Papakostas, 2019
+## [Papakostas, 2019](https://doi.org/10.1145/3316782.3322772)
 
 *Michalis Papakostas, Varun Kanal, Maher Abujelala, Konstantinos Tsiakas, and Fillia Makedon. 2019. Physical fatigue detection through EMG wearables and subjective user reports: a machine learning approach towards adaptive rehabilitation. In Proceedings of the 12th ACM International Conference on PErvasive Technologies Related to Assistive Environments (PETRA '19). Association for Computing Machinery, New York, NY, USA, 475–481. https://doi.org/10.1145/3316782.3322772*
 
@@ -186,10 +190,11 @@ Classifier makes predictions on a mid-term level -> need to be mapped to longt-t
 <img src="image.png" alt="drawing" width="400"/>
 
 hyper-parameters were set to K1 = 3, M = 3,STEP = 1,N = 2,THRESH_VAL = 0.6 and K2 = 11
+
 ### Results
 -> results vary across tests, for  single user evaluation Extra Trees are strongest (78%)
 
-## Kefalas, 2023
+## [Kefalas, 2023](https://hdl.handle.net/1887/3511983)
 *Kefalas, M. (2023, January 19). Data-driven predictive maintenance and time- series applications. Retrieved from https://hdl.handle.net/1887/3511983*
 
 as well as 
@@ -240,7 +245,7 @@ Executed 200 times
 Evaluation based on 10-fold Cross Validation
 <img src="image-2.png" alt="drawing" width="400"/>
 
-## Jaiswal, 2022
+## [Jaiswal, 2022](https://arxiv.org/abs/2205.00287)
 
 *Jaiswal, Ashish; Zaki Zadeh, Mohammad; Hebri, Aref; Mekdon, Fillia (2022):Assessing Fatigue with Multimodal Wearable Sensors and Machine Learning. arXiv: https://arxiv.org/abs/2205.00287.*
 
@@ -305,7 +310,7 @@ Most of the feature extraction was carried out using the package named [Neurokit
 
 
 
-## Yaman, 2019
+## [Yaman, 2019](10.1155/2019/9152506)
 *Yaman E, Subasi A. Comparison of Bagging and Boosting Ensemble Machine Learning Methods for Automated EMG Signal Classification. Biomed Res Int. 2019 Oct 31;2019:9152506. doi: 10.1155/2019/9152506. PMID: 31828145; PMCID: PMC6885261.*
 
 ### Task
