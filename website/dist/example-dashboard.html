@@ -72,8 +72,8 @@ const surveyData = FileAttachment("./data/study_data.csv").csv({typed: true}).th
 return {utcParse,d3,csvFormat,parseDate,coerceRow,surveyData};
 }});
 
-define({id: "8434e48f", inputs: ["display","surveyData","Plot"], outputs: ["FatiguePlot","correlationPlot"], body: (display,surveyData,Plot) => {
-display(surveyData)
+define({id: "e2159040", inputs: ["display","surveyData","Plot"], outputs: ["FatiguePlot","correlationPlot"], body: (display,surveyData,Plot) => {
+//display(surveyData)
 display(FatiguePlot(surveyData))
 function FatiguePlot(data, {width} = {}) {
   return Plot.plot({
@@ -178,9 +178,10 @@ return {FatiguePlot,correlationPlot};
   <section class="observablehq-section-active">
     <summary>AI:Rx</summary>
     <ol>
-    <li class="observablehq-link observablehq-link-active"><a href="./example-dashboard">Data Viz</a></li>
     <li class="observablehq-link"><a href="./example-report">Quantifying Yourself</a></li>
     <li class="observablehq-link"><a href="./research">Research</a></li>
+    <li class="observablehq-link"><a href="./code">Code</a></li>
+    <li class="observablehq-link observablehq-link-active"><a href="./example-dashboard">Survey Data Visualisation</a></li>
     </ol>
   </section>
 </nav>
@@ -198,10 +199,10 @@ return {FatiguePlot,correlationPlot};
 <!-- Load and transform the data -->
 <div id="cell-9f194890" class="observablehq observablehq--block"></div>
 <!-- A shared color scale for consistency, sorted by the number of launches -->
-<div id="cell-8434e48f" class="observablehq observablehq--block"></div>
+<div id="cell-e2159040" class="observablehq observablehq--block"></div>
 </main>
 <footer id="observablehq-footer">
-<nav><a rel="prev" href="./"><span>Do algorithms care?</span></a><a rel="next" href="./example-report"><span>Quantifying Yourself</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-12T14:17:27">Jun 12, 2024</a>.</div>
+<nav><a rel="prev" href="./code"><span>Code</span></a></nav>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-12T14:22:22">Jun 12, 2024</a>.</div>
 </footer>
 </div>

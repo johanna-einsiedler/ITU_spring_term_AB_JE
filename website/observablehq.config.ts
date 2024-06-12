@@ -11,10 +11,10 @@ export default {
      {
        name: "AI:Rx",
        pages: [
-         {name: "Data Viz", path: "/example-dashboard"},
          {name: "Quantifying Yourself", path: "/example-report"},
-         {name: "Research", path: "/research"}
-
+         {name: "Research", path: "/research"},
+         {name: "Code", path: "/code"},
+         {name: "Survey Data Visualisation", path: "/example-dashboard"}
        ]
      }
    ]

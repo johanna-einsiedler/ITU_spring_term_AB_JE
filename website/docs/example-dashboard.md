@@ -34,7 +34,7 @@ const surveyData = FileAttachment("data/study_data.csv").csv({typed: true}).then
 
 ```js
 
-display(surveyData)
+//display(surveyData)
 display(FatiguePlot(surveyData))
 function FatiguePlot(data, {width} = {}) {
   return Plot.plot({

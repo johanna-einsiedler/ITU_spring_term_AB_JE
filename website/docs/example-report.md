@@ -12,7 +12,7 @@ title: Study Protocol
 </style>
 
 # Study Protocol
-Last edited: June 11th, 2024
+Last edited: June 12th, 2024
 
 ## Variables to be Collected
 - Muscle Data
@@ -124,11 +124,13 @@ Closed form:
    - Running
    - Ball Sports
    - Cycling for 30min or longer
+   - Swimming
    - Other: please specify
-
+- Pedometer - Numeric
 Free text:
 - Did you have any illnesses recently?
 - Was there anything that stressed you today?
+- Short, keyword description of what you did today
 - Any comments regarding the measurement session today (e.g. bloopers with electrodes etc.)
 - Was there anything else that might be relevant?
 
