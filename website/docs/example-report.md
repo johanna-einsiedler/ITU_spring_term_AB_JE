@@ -15,17 +15,14 @@ title: Study Protocol
 Last edited: June 12th, 2024
 
 ## Variables to be Collected
-- Muscle Data
+- Muscle Data [2x per day - one time in the morning after waking up, one time in the evening]
    - EMG measurements
    - MMG measurements
-- Survey data
-- Step count
+- Survey data [1x per day - in the evening]
+- Step count [1x per day - in the evening]
 
-### Muscle Data Measurement
 
-Timing? -> in the morning?! (most consistent?)
-
-### EMG + MMG Measurement Protocol
+### Muscle Data Measurement Protocol
 
 1. Clean skin where the electrodes will be positioned
 2. Position measurement electrodes as in [Smith et al 2017](https://doi.org/10.1002/mus.25502) - see drawing
