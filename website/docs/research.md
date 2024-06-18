@@ -2,23 +2,10 @@
 title: Literature Review
 ---
 
-
-<link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
-<style>
-  body, svg {
-     font-family: var(--sans-serif);
-        /* font-size: 48px; */
- }
-</style>
-
 # Literature Review
 Last edited: June 8th, 2024
 
 What can we find out about fatigue prediction based on EMG measurements?
-
-
-
-
 
 ## [Li, 2024](https://dl.acm.org/doi/pdf/10.1145/3648679)
 >Na Li, Rui Zhou, Bharath Krishna, Ashirbad Pradhan, Hyowon Lee, Jiayuan He, and Ning Jiang. 2024. Non-invasive Techniques for Muscle Fatigue Monitoring: A Comprehensive Survey. ACM Comput. Surv. 56, 9, Article 221 (September 2024), 40 pages. https://doi.org/10.1145/3648679<
@@ -89,7 +76,7 @@ Review existing studies of studies on the assessment of muscles fatigue based on
 
 ### Protocols
 Existing studies use very different protocols:
-<img src="image-3.png" alt="drawing" width="400"/>
+<img src="images/image-3.png" alt="drawing" width="400"/>
 
 ### Fatigue Measurement
 >The single most relevant determination of fatigue is done through the measurement of force or power measurement, which is produced during the course of a voluntary effort of maximum intensity, maximal voluntary contractions (MVCs) test. In general, when the subject performs the task of interest or the fatigue task continuously, at the pre-, post- and/or the interim time point, brief MVC tests will be conducted to register the drop of maximal force output from particular muscle. (...) The force output decline rate measured in these MVCs tests will indicate the muscle fatigue pattern.<>
@@ -187,7 +174,7 @@ Classifier makes predictions on a mid-term level -> need to be mapped to longt-t
 3.  Gather the successive assigned labels into groups of M
 2. "If in the N past groups, the total number of samples that have been identified as ’FATIGUE’ exceeds a specific threshold, then and only then the method decides that the subject has shown signs of fatigue. Otherwise it assumes that the classification algorithm found a set of false positives and the process continues as if the subject has not been fatigued." <br>
 
-<img src="image.png" alt="drawing" width="400"/>
+<img src="images/image.png" alt="drawing" width="400"/>
 
 hyper-parameters were set to K1 = 3, M = 3,STEP = 1,N = 2,THRESH_VAL = 0.6 and K2 = 11
 
@@ -229,7 +216,7 @@ Features are extracted based on the Python time series processing package 'tsfre
 
 ### Feature Selection
 The feature selection algorithm "boruta" is used.
-<img src="image-4.png" alt="drawing" width="400"/>
+<img src="images/image-4.png" alt="drawing" width="400"/>
 
 ### Model
 Random forest model
@@ -239,11 +226,11 @@ Random forest model
 Hyperparameter Optimization using Mixed-integer Parallel Efficient Global Optimization (MIP-EGO) for optimizing F1-macro score of a 10-fold cross-validation
 Executed 200 times 
 
-<img src="image-1.png" alt="drawing" width="400"/>
+<img src="images/image-1.png" alt="drawing" width="400"/>
 
 ### Results
 Evaluation based on 10-fold Cross Validation
-<img src="image-2.png" alt="drawing" width="400"/>
+<img src="images/image-2.png" alt="drawing" width="400"/>
 
 ## [Jaiswal, 2022](https://arxiv.org/abs/2205.00287)
 
@@ -305,7 +292,7 @@ Most of the feature extraction was carried out using the package named [Neurokit
 
 ### Results
 
-<img src="image-5.png" alt="drawing" width="400"/>
+<img src="images/image-5.png" alt="drawing" width="400"/>
 
 
 
@@ -342,5 +329,5 @@ subband
 ### Results
 10-fold cross-validation
 
-<img src="image-6.png" alt="drawing" width="400"/>
+<img src="images/image-6.png" alt="drawing" width="400"/>
 

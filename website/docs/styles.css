@@ -1,0 +1,49 @@
+@import url("observablehq:default.css");
+@import url("observablehq:theme-deep-space.css");
+@import url("observablehq:theme-wide.css");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+
+:root {
+  --theme-foreground-focus: #FBCEB1;
+  --theme-foregorund-fainter: #f9b080;
+  --theme-foreground-faint:#fcddc9;
+  --theme-foreground-muted:#fef1e9;
+}
+
+body, svg {
+  font-family: var(--sans-serif);
+  max-width: none;
+     /* font-size: 48px; */
+}
+h1 {
+color: var(  --theme-foregorund-fainter)
+}
+h2 {
+color: var(  --theme-foreground-focus)
+}
+
+h3 {
+  color: var(--theme-foreground-muted)
+  }
+
+h1:hover{
+  text-decoration: none;
+}
+  
+  a:hover {
+      text-decoration: none;
+  }
+#observablehq-main,
+#observablehq-header,
+#observablehq-footer {
+  max-width: none;
+}
+/* :root {
+  --theme-foreground-focus: #FBCEB1;
+  --theme-foreground-faintest: #f7a068;
+  --theme-foregorund-fainter: #f9b080;
+  --theme-foreground-faint:#fcddc9;
+  --theme-foreground-muted:#FBCEB1;
+}
+    */

@@ -42,5 +42,4 @@ surveyLong <- surveyData %>% pivot_longer(cols=c('wellness','tomorrow','steps','
                                    'stairs','common','pain','rash','pred_yesterday'),
                                    names_to = 'variable',
                                    values_to = 'y')
-print(correlations)
 cat(format_csv(correlations))

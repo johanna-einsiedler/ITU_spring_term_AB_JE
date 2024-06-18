@@ -7,7 +7,7 @@ toc: false
   }
 </style>
 <div class="hero">
-<h1> Correlations </h1>
+<h1> Survey Data Visualisation </h1>
 </div>
 
 <!-- Load and transform the data -->
@@ -55,7 +55,7 @@ function FatiguePlot(data, {width} = {}) {
     //y:{grid:true},
     //facet: {marginRight: 79},
     marks: [
-        Plot.gridX({strokeDasharray: "2",strokeWidth:1, stroke: '#E1BEE7',interval:1, opacity:.5}),
+        Plot.gridX({strokeDasharray: "2",strokeWidth:1, stroke: '#fcddc9',interval:1, opacity:.5}),
         //Plot.rectX({length: 1}, {y1: 0, y2: 1.4, fill: "red", fillOpacity: 0.3}),
         Plot.axisX({anchor: "top", grid:true}),
         //Plot.text(data, {x: "value", y: "date", text: 'value',fx:'name', dx: 6, lineAnchor: "bottom", rotate:90}),
@@ -64,7 +64,7 @@ function FatiguePlot(data, {width} = {}) {
         x: "value",
         fx: "name",
         y: "date",
-        fill: '#E1BEE7',
+        fill: '#fcddc9',
         clip: false
       }),
       Plot.text([`How fatigued were you today?`,`Overall how did you feel today?`,`How difficult was it to dress and shower today?`,

@@ -12,6 +12,4 @@ title: Code
 </style>
 
 # Code
-Last edited: June 10th, 2024
-
-All code for this project can be found on [Gitub](https://github.com/johanna-einsiedler/ITU_spring_term_AB_JE/tree/main)
+All code for this project can be found on [Github](https://github.com/johanna-einsiedler/ITU_spring_term_AB_JE/tree/main)
