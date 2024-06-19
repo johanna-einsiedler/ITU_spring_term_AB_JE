@@ -24,7 +24,7 @@ title: Study Protocol
 - Step count [1x per day - in the evening]
 
 
-### Muscle Data Measurement Protocol
+## Muscle Data Measurement Protocol
 
 We use a  [BITalino (r)evolution board](https://www.pluxbiosignals.com/collections/bitalino/products/bitalino-revolution-plugged-kit-ble-bt) with an EMG sensor, an MMG sensor and a button. See HERE for instructions on how to build your own.
 
@@ -88,8 +88,12 @@ For the protocol time tracking we found it helpful to use an interval time track
   </div>
 </div>
 
-### Survey
-#### Assesssing Fatigue
+## Survey
+The survey has two purposes:
+1. measure subjective experience of (muscle) fatigue 
+2. gather information about other variables that could influence fatigue levels
+
+### Assesssing Fatigue
 We are using an adapted version of the Checklist Individual Strength (CIS) for our questionnaire. This instrument was originally developed for measuring severity of fatigue in hospital studies of chronic fatigue symptom patients but has also been validated in the working population (see [Beurskens et al., 2000](https://oem.bmj.com/content/oemed/57/5/353.full.pdf)). Many other fatigue measurement scales such as e.g. the Fatigue Severity Scale (FSS) ([Krupp et al., 1989](10.1001/archneur.1989.00520460115022)) or the Fatigue Impact Scale (FIS)([Fisk et al 1994](https://pubmed.ncbi.nlm.nih.gov/8148458/)) have either not been validated in healthy individuals or presume the ongoing presence of fatigue and are thus not applicable to our use case. Additionally, the CIS has been proven to have a good internal consistency and has been shown to be sensitive to change in fatigue levels over time (see [Dittner et al. 2004](https://www.sciencedirect.com/science/article/pii/S0022399903003714)).
 
 However,  in its original form the CIS is intended to assess fatigue levels over  time periods of 2 weeks ([Beurskens et al., 2000](https://oem.bmj.com/content/oemed/57/5/353.full.pdf)), we thus adapt the statements to be applicable to the past day as the questionnaire is inteded to be filled out at the end of each day.
@@ -116,7 +120,6 @@ The survey has 20 items that are scored on a 7 level agreement scale ranging fro
 - I felt no desire to do anything
 - My thoughts easily wandered
 - Physically I felt in a good shape
-
 
 #### Assessing overall wellbeing and muscle soreness
 Since our study specifically focuses on muscle fatigue, we incorporated additional items in the questionnaire to better represent this specific dimension as it is not explicitly covered in the CIS. For this we adapted the [Hooper Index](https://pubmed.ncbi.nlm.nih.gov/7898325/) which is regularly used for the assessment of wellbeing in sports studies (e.g. [Clemente et al 2017](https://www.sciencedirect.com/science/article/pii/S003193841631068X?via%3Dihub#bb0110), [Clemente et al 2019](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6714361/#j_hukin-2019-0002_ref_011), [Haddad et al 2013](https://www.sciencedirect.com/science/article/pii/S0031938413002023))
@@ -178,14 +181,21 @@ Closed form:
    - Other: please specify
 - Pedometer - Numeric
 Free text:
-- Did you have any illnesses recently?
-- Was there anything that stressed you today?
+- Did you feel ill? If so, describe the severity and symptoms.
+- Have you experienced any significant changes in your mental wellbeing/stress today? Can you describe the situation(s).
 - Short, keyword description of what you did today
 - Any comments regarding the measurement session today (e.g. bloopers with electrodes etc.)
 - Was there anything else that might be relevant?
 
+### Topics not included in the questionnaire
+#### Nutrition
+While muscle fatigue is a complex phenomenon, most current evidence indicates that muscle fatigue in the context of chronic fatigue or illnesses, is mainly caused by the failures in the central nervous system (CNS) ([Davis & Bailey 1997](https://journals.lww.com/acsm-msse/fulltext/1997/01000/possible_mechanisms_of_central_nervous_system.8.aspx)). The mechanisms that cause CNS fatigue are not well understood, a possible epxlanation are exercise induced alteration in neurotransmitters ([Davis, 1999](http://www.bentrem.sycks.net/NutritionInSport-Ronald-J-Maughan.pdf#page=189)).
 
+While these neurotransmitters are affected by nutritional intake, the relationship is still unclear and is further dependent on other environmental and metabolic factors. Considering this as well as the substantial additional time requirement for recording food intake, we have decided not to include this dimension in our questionnaire.
+Also, [Campagnolo et al, 2017](https://onlinelibrary.wiley.com/doi/full/10.1111/jhn.12435) conducted a review of dietary and nutrition interventions for the treatment of chronic fatigue syndrome and 'identified insufficient evidence for the use of nutrtional supplements and elimination or modified diets to relive symptoms'.
 
+#### Environmental Factors
+We do not include any questions regarding exposure to pollution, outdoor time or weather. We are considering adding those measurement via the integration of a smartwatch in the future. However, manual reporting of these measures is currently out of scope.
 <!--
 #### Questions from first trial
 - How fatigued were your muscles today? 1 (no fatigue at all) to 7 (extremely fatigued)

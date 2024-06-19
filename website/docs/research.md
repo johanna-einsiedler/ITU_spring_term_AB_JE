@@ -2,10 +2,13 @@
 title: Literature Review
 ---
 
-# Literature Review
-Last edited: June 8th, 2024
+# Characterization of Muscle Fatigue
+## 
+"The problem is complex because fatigue can be caused by peripheral muscle weakness
+(peripheral fatigue) or by a failure to initiate or sustain voluntary drive to the muscle by the central nervous system (CNS fatigue)."
 
-What can we find out about fatigue prediction based on EMG measurements?
+"CNS fatigue is also thought to be the most likely explanation of fatigue that accompanies viral or bacterial infections, recovery from injury or surgery, chronic fatigue syndrome, depression, ‘jet lag’ and meal-induced sleepiness and fatigue (Davis & Bailey 1997). However, a full understanding of the causes of fatigue in these situations will await future studies designed to provide plausible neurobiological mechanisms to explain the fatigue."
+# Studies trying to predict fatigue based on EMG data
 
 ## [Li, 2024](https://dl.acm.org/doi/pdf/10.1145/3648679)
 >Na Li, Rui Zhou, Bharath Krishna, Ashirbad Pradhan, Hyowon Lee, Jiayuan He, and Ning Jiang. 2024. Non-invasive Techniques for Muscle Fatigue Monitoring: A Comprehensive Survey. ACM Comput. Surv. 56, 9, Article 221 (September 2024), 40 pages. https://doi.org/10.1145/3648679<
