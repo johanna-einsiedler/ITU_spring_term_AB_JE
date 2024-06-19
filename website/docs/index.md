@@ -234,8 +234,8 @@ The wider the user base for the data, the more decontextualized the data needs t
   </div>
   </div>
  
-  <div class="scroll-section" data-step="3">STEP 3</div>
-  <div class="scroll-section" data-step="4">STEP 4</div>
+  <!-- <div class="scroll-section" data-step="3">STEP 3</div>
+  <div class="scroll-section" data-step="4">STEP 4</div> -->
 </section>
 
 ```js
