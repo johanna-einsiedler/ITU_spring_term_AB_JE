@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>Do algorithms care?</title>
+<title>Do Algorithms Care?</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
-<link rel="preload" as="style" href="./_observablehq/theme-deep-space.css">
+<link rel="preload" as="style" href="./_import/styles.7c3ba4e1.css">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&amp;display=swap" crossorigin>
-<link rel="stylesheet" type="text/css" href="./_observablehq/theme-deep-space.css">
+<link rel="stylesheet" type="text/css" href="./_import/styles.7c3ba4e1.css">
 <link rel="modulepreload" href="./_observablehq/client.js">
 <link rel="modulepreload" href="./_observablehq/runtime.js">
 <link rel="modulepreload" href="./_observablehq/stdlib.js">
@@ -72,7 +72,7 @@ const surveyData = FileAttachment("./data/study_data.csv").csv({typed: true}).th
 return {utcParse,d3,csvFormat,parseDate,coerceRow,surveyData};
 }});
 
-define({id: "e2159040", inputs: ["display","surveyData","Plot"], outputs: ["FatiguePlot","correlationPlot"], body: (display,surveyData,Plot) => {
+define({id: "3c5d0e4a", inputs: ["display","surveyData","Plot"], outputs: ["FatiguePlot","correlationPlot"], body: (display,surveyData,Plot) => {
 //display(surveyData)
 display(FatiguePlot(surveyData))
 function FatiguePlot(data, {width} = {}) {
@@ -94,7 +94,7 @@ function FatiguePlot(data, {width} = {}) {
     //y:{grid:true},
     //facet: {marginRight: 79},
     marks: [
-        Plot.gridX({strokeDasharray: "2",strokeWidth:1, stroke: '#E1BEE7',interval:1, opacity:.5}),
+        Plot.gridX({strokeDasharray: "2",strokeWidth:1, stroke: '#fcddc9',interval:1, opacity:.5}),
         //Plot.rectX({length: 1}, {y1: 0, y2: 1.4, fill: "red", fillOpacity: 0.3}),
         Plot.axisX({anchor: "top", grid:true}),
         //Plot.text(data, {x: "value", y: "date", text: 'value',fx:'name', dx: 6, lineAnchor: "bottom", rotate:90}),
@@ -103,7 +103,7 @@ function FatiguePlot(data, {width} = {}) {
         x: "value",
         fx: "name",
         y: "date",
-        fill: '#E1BEE7',
+        fill: '#fcddc9',
         clip: false
       }),
       Plot.text([`How fatigued were you today?`,`Overall how did you feel today?`,`How difficult was it to dress and shower today?`,
@@ -173,14 +173,17 @@ return {FatiguePlot,correlationPlot};
 <nav id="observablehq-sidebar">
   <ol>
     <label id="observablehq-sidebar-close" for="observablehq-sidebar-toggle"></label>
-    <li class="observablehq-link"><a href="./">Do algorithms care?</a></li>
+    <li class="observablehq-link"><a href="./">Do Algorithms Care?</a></li>
   </ol>
   <section class="observablehq-section-active">
-    <summary>AI:Rx</summary>
+    <summary></summary>
     <ol>
-    <li class="observablehq-link"><a href="./example-report">Quantifying Yourself</a></li>
+    <li class="observablehq-link"><a href="./protocol">Protocol</a></li>
+    <li class="observablehq-link"><a href="./sensor-kit">Apricot Sensor-Kit N2</a></li>
     <li class="observablehq-link"><a href="./research">Research</a></li>
     <li class="observablehq-link"><a href="./code">Code</a></li>
+    <li class="observablehq-link"><a href="./about">About</a></li>
+    <li class="observablehq-link"><a href="./emg_data">EMG Data</a></li>
     <li class="observablehq-link observablehq-link-active"><a href="./example-dashboard">Survey Data Visualisation</a></li>
     </ol>
   </section>
@@ -194,15 +197,14 @@ return {FatiguePlot,correlationPlot};
   }
 </style>
 <div class="hero">
-<h1> Correlations </h1>
+<h1> Survey Data Visualisation </h1>
 </div>
 <!-- Load and transform the data -->
 <div id="cell-9f194890" class="observablehq observablehq--block"></div>
 <!-- A shared color scale for consistency, sorted by the number of launches -->
-<div id="cell-e2159040" class="observablehq observablehq--block"></div>
+<div id="cell-3c5d0e4a" class="observablehq observablehq--block"></div>
 </main>
 <footer id="observablehq-footer">
-<nav><a rel="prev" href="./code"><span>Code</span></a></nav>
-<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-12T14:25:08">Jun 12, 2024</a>.</div>
+<div>Built with <a href="https://observablehq.com/" target="_blank" rel="noopener noreferrer">Observable</a> on <a title="2024-06-19T09:26:54">Jun 19, 2024</a>.</div>
 </footer>
 </div>
